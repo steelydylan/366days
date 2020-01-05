@@ -2,9 +2,9 @@ import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import { Styled, css } from "theme-ui"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Footer from "../components/home-footer"
+import Layout from "gatsby-theme-blog/src/components/layout"
+import SEO from "gatsby-theme-blog/src/components/seo"
+import Footer from "gatsby-theme-blog/src/components/home-footer"
 
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
   <Layout location={location} title={siteTitle}>
