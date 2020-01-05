@@ -14,7 +14,7 @@ export default {
       borderRadius: 10,
       p: 3,
     },
-    ".gatsby-resp-image-background-image:first-child:last-child": {
+    ".gatsby-resp-image-background-image": {
       display: 'none',
     },
     code: {
