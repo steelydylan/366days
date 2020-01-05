@@ -14,6 +14,9 @@ export default {
       borderRadius: 10,
       p: 3,
     },
+    ".gatsby-resp-image-background-image:first-child:last-child": {
+      display: 'none',
+    },
     code: {
       fontFamily: `monospace`,
       // from typography overrideThemeStyles
