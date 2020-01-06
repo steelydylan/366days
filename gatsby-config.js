@@ -4,6 +4,19 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [ `gatsby-remark-images` ],
+        plugins: [ `gatsby-remark-images` ],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-1809493930689268`
+      },
+    }
   ],
   // Customize your site metadata:
   siteMetadata: {
