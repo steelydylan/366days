@@ -35,6 +35,10 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
               <small>{node.date}</small>
               <Styled.p>{node.excerpt}</Styled.p>
             </div>
+            <AdSense.Google
+              client={process.env.GOOGLE_ADSENSE_ID}
+              slot=''
+            />
           </Fragment>
         )
       })}
