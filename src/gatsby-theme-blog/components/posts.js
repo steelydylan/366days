@@ -1,7 +1,6 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import { Styled, css } from "theme-ui"
-import AdSense from 'react-adsense'
 
 import Layout from "gatsby-theme-blog/src/components/layout"
 import SEO from "gatsby-theme-blog/src/components/seo"
@@ -36,10 +35,6 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
               <small>{node.date}</small>
               <Styled.p>{node.excerpt}</Styled.p>
             </div>
-            <AdSense.Google
-              client={process.env.GOOGLE_ADSENSE_ID}
-              slot=''
-            />
           </Fragment>
         )
       })}

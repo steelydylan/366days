@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import AdSense from 'react-adsense'
 
 export default function HTML(props) {
   return (
@@ -23,6 +24,10 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        <AdSense.Google
+          client={process.env.GOOGLE_ADSENSE_ID}
+          slot=''
         />
         {props.postBodyComponents}
       </body>
