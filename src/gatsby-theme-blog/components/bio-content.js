@@ -7,7 +7,7 @@ import { Styled } from "theme-ui"
 
 export default () => (
   <Fragment>
-    元保育士の新参ブロガーです。夫とのお出かけのことや、節約術などを書いていきます。
+    完璧主義な主婦が頑張りすぎない暮らしを目指すブログ。
     <style>
       {`
       .gatsby-resp-image-image {

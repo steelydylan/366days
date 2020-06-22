@@ -14,7 +14,7 @@ module.exports = {
   ],
   // Customize your site metadata:
   siteMetadata: {
-    title: `366 days`,
+    title: `脱！完璧主義の100点を目指さない暮らし`,
     author: `My Name`,
     description: `My site description...`,
     social: [
