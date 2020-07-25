@@ -10,7 +10,13 @@ module.exports = {
         gatsbyRemarkPlugins: [ `gatsby-remark-images` ],
         plugins: [ `gatsby-remark-images` ],
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: process.env.GOOGLE_ADSENSE_ID
+      },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
