@@ -12,7 +12,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script data-ad-client={process.env.GOOGLE_ADSENSE_ID} async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -24,10 +24,6 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        <AdSense.Google
-          client={process.env.GOOGLE_ADSENSE_ID}
-          slot=''
         />
         {props.postBodyComponents}
       </body>

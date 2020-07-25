@@ -2,18 +2,31 @@ import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import { Styled, css } from "theme-ui"
 
-import Layout from "gatsby-theme-blog/src/components/layout"
+import Layout from "./layout"
 import SEO from "gatsby-theme-blog/src/components/seo"
 import Footer from "gatsby-theme-blog/src/components/home-footer"
+import styled from "styled-components"
+
+const SideMenu = styled.div`
+  width: 30%;
+  padding: 0 10px;
+`
+
+const Article = styled.div`
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 20px;
+`
+
 
 const Posts = ({ location, posts, siteTitle, socialLinks }) => (
   <Layout location={location} title={siteTitle}>
-    <main>
+    <div style={{ display: 'flex' }}>
+      <div>
       {posts.map(({ node }) => {
         const title = node.title || node.slug
         const keywords = node.keywords || []
         return (
-          <Fragment key={node.slug}>
+          <Article key={node.slug}>
             <SEO title="Home" keywords={keywords} />
             <div>
               <Styled.h2
@@ -35,10 +48,13 @@ const Posts = ({ location, posts, siteTitle, socialLinks }) => (
               <small>{node.date}</small>
               <Styled.p>{node.excerpt}</Styled.p>
             </div>
-          </Fragment>
+          </Article>
         )
       })}
-    </main>
+      </div>
+      <SideMenu>
+      </SideMenu>
+    </div>
     <Footer socialLinks={socialLinks} />
   </Layout>
 )
