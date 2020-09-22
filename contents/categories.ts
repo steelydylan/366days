@@ -18,6 +18,12 @@ const categories: Category[] = [
     title: "今日のご飯",
     imagePath: "https://twemoji.maxcdn.com/2/svg/2728.svg",
     description: ""
+  },
+  {
+    id: "travel",
+    title: "おでかけ",
+    imagePath: "https://twemoji.maxcdn.com/2/svg/2728.svg",
+    description: ""
   }
 ];
 
