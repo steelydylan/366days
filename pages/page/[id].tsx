@@ -27,7 +27,11 @@ export default ({
               >
                 <a href={`/${post.data.category}/${post.slug}`}>
                   <LazyBackground
-                    url="https://source.unsplash.com/random"
+                    url={
+                      post.data.images?.length
+                        ? post.data.images[0]
+                        : "https://source.unsplash.com/random"
+                    }
                     className="uc-card-image"
                   />
                   <div className="uc-card-wrap">
