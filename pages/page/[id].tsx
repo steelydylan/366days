@@ -19,7 +19,7 @@ export default ({
     <Layout type="index" current={current} max={max}>
       {posts.map(post => {
         return (
-          <div className="uc-grid-cell">
+          <div className="uc-grid-cell" key={post.slug}>
             <article className="uc-card _banner">
               <Link
                 href="/[categoryId]/[id]"
