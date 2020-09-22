@@ -6,7 +6,7 @@ type AuthorProps = {
 
 export const authors: AuthorProps[] = [
   {
-    name: "mayo",
+    name: "pomi",
     avatar: "/images/mayo.jpg",
     twitterUsername: "v2Y0tQ8zpK7qjoR"
   }
