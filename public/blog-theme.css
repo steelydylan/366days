@@ -11,7 +11,7 @@
 	height: auto;
 }
 
-.entry li {
+.entry ul li {
 	list-style-type: disc;
 }
 
