@@ -11,6 +11,10 @@
 	height: auto;
 }
 
+.entry ul li {
+	list-style-type: disc;
+}
+
 .entry-user-info {
 	display: inline-block;
 	margin-right: 5px;
