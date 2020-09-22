@@ -18,10 +18,10 @@ export default () => {
                 backgroundImage: "url(/images/mayo.jpg)"
               }}
             />
-            <div className="uc-card-title">mayo</div>
+            <div className="uc-card-title">pomi</div>
           </div>
           <div className="uc-card-body">
-            <p>専業主婦 兼 ブロガー</p>
+            <p>ブロガー</p>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ const AuthorMeta = styled.span`
 `;
 
 const AuthorLink = ({
-  writtenBy = "mayo",
+  writtenBy = "pomi",
   children
 }: {
   writtenBy: string;
