@@ -25,8 +25,8 @@ type Props = {
 const nextSeoConfig = {
   openGraph: {
     type: "website",
-    site_name: "HoricDesign",
-    title: "JavaScript好きなエンジニアのブログ",
+    site_name: "366days",
+    title: "脱！完璧主義の100点を目指さない暮らし",
     images: [
       {
         url: `${process.env.APP_ROOT_URL}/images/og.png`
@@ -36,7 +36,7 @@ const nextSeoConfig = {
   twitter: {
     cardType: "summary_large_image"
   },
-  titleTemplate: "%s | HoricDesign"
+  titleTemplate: "%s | 366days"
 };
 
 library.add(faTwitter, faInstagram, faGithub);

@@ -12,7 +12,7 @@ export default ({ onClick, open }: Props) => {
       <header className="uc-header _ghost">
         <div className="uc-header-logo">
           <Link href="/">
-            <a href="/">Horic Design</a>
+            <a href="/">366days work</a>
           </Link>
         </div>
         <div className="uc-header-menu _hide-small" role="navigation">

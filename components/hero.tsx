@@ -12,9 +12,7 @@ export default (props: Props) => {
         className="uc-hero-bg"
         url="https://source.unsplash.com/1600x900/?nature,water"
       />
-      <h1 className="uc-hero-title">
-        {props.title ? props.title : "Horic Design"}
-      </h1>
+      <h1 className="uc-hero-title">{props.title ? props.title : "366days"}</h1>
     </div>
   );
 };

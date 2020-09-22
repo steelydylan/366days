@@ -14,7 +14,7 @@ export default () => {
         <a href="https://github.com/steelydylan">GitHub</a>
       </div>
       <div className="uc-footer-logo">
-        <cite>Horic Design</cite>
+        <cite>366days</cite>
       </div>
       <p>
         This page was made using
@@ -27,7 +27,7 @@ export default () => {
         </a>
         .
       </p>
-      <small>&copy; 2017 Horic Design</small>
+      <small>&copy; 2017 366days</small>
     </footer>
   );
 };
