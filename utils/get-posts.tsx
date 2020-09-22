@@ -1,4 +1,5 @@
 import { Entry } from "@/types/";
+import { renderToString } from "react-dom/server";
 
 export const getPosts = (): Entry[] => {
   // Get posts from folder
@@ -10,11 +11,23 @@ export const getPosts = (): Entry[] => {
       const paths = key.split("/");
       // paths.pop();
       const slug = paths.pop().replace(/\.mdx/, "");
-      const { default: content, ...extra } = values[index];
+      const { default: Content, ...extra } = values[index];
       // Parse document
+      const html = renderToString(<Content />);
+      const rex = /<img[^>]+src="?([^"\s]+)"?\s*\/>/g;
+      const images = [];
+      const matches = html.match(rex);
+      if (matches) {
+        matches.forEach(m => {
+          const path = rex.exec(m);
+          if (path) {
+            images.push(path[1]);
+          }
+        });
+      }
       return {
-        content,
-        data: extra,
+        content: Content,
+        data: { ...extra, images },
         slug
       };
     });

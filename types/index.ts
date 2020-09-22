@@ -11,6 +11,7 @@ export type Entry = {
   slug?: string;
   id: string;
   excerpt: string;
+  images?: string[];
 };
 
 export type Category = {

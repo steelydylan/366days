@@ -12,7 +12,7 @@ import Layout from "@/components/layout";
 
 type DetailProps = { entry: Entry; category: Category; errorCode?: number };
 
-export default ({ entry, category, errorCode, ...other }: DetailProps) => {
+export default ({ entry, category, errorCode }: DetailProps) => {
   const highlightRef = useHighlight();
 
   // if (errorCode) {

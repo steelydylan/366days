@@ -19,10 +19,10 @@ export default ({ onClick, open }: Props) => {
           <Link href="/[categoryId]/[id]" as="/daily/aboutme">
             <a href="/daily/aboutme">About</a>
           </Link>
-          <Link href="/[categoryId]/[id]" as="/daily/portfolio">
+          {/* <Link href="/[categoryId]/[id]" as="/daily/portfolio">
             <a href="/daily/portfolio">Portfolio</a>
           </Link>
-          <a href="https://github.com/steelydylan">GitHub</a>
+          <a href="https://github.com/steelydylan">GitHub</a> */}
         </div>
         <div
           className={`uc-menu-btn _hide-medium _hide-large${
