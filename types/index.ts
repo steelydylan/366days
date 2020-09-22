@@ -3,6 +3,7 @@ export type EntryData = {
   date: string;
   category: string;
   writtenBy: string;
+  images?: string[];
 };
 
 export type Entry = {
@@ -11,7 +12,6 @@ export type Entry = {
   slug?: string;
   id: string;
   excerpt: string;
-  images?: string[];
 };
 
 export type Category = {
