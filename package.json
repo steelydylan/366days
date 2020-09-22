@@ -9,6 +9,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "npm run build && npm run export",
+    "optim": "node ./tools/optim.js",
     "lint": "eslint ./**/*.tsx --fix"
   },
   "engines": {
@@ -27,6 +28,9 @@
     "got": "^11.1.4",
     "gray-matter": "^4.0.2",
     "highlight.js": "^9.18.1",
+    "imagemin": "^7.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-pngquant": "^9.0.1",
     "metascraper": "^5.11.16",
     "metascraper-description": "^5.11.16",
     "metascraper-image": "^5.11.16",
