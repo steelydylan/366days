@@ -6,6 +6,11 @@
 	margin-right: 5px;
 }
 
+.entry img {
+	max-width: 100%;
+	height: auto;
+}
+
 .entry-user-info {
 	display: inline-block;
 	margin-right: 5px;
