@@ -52,6 +52,11 @@ export default (props: Props) => {
       <Head>
         <link rel="stylesheet" href="/blog-theme.css" />
         <link rel="stylesheet" href="/bundle.css" />
+        <script
+          data-ad-client="ca-pub-1809493930689268"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        />
       </Head>
       <Header open={openOffcanvas} onClick={() => setOpenOffcanvas(!openOffcanvas)} />
       <Offcanvas open={openOffcanvas} />
