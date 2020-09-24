@@ -10,7 +10,7 @@ export default (props: Props) => {
     <div className="uc-hero">
       <LazyBackground
         className="uc-hero-bg"
-        url="https://source.unsplash.com/1600x900/?nature,water"
+        url="https://source.unsplash.com/1600x900/?food"
       />
       <h1 className="uc-hero-title">{props.title ? props.title : "366days"}</h1>
     </div>
