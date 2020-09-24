@@ -13,7 +13,7 @@ export default styled.article`
     font-style: italic;
   }
   strong {
-    font-weight: 700;
+    font-weight: 500;
   }
   a {
     color: var(--c-primary);
